@@ -5,7 +5,6 @@ class Nodo:
 
 
 class Lista:
-	# Estrutura principal da atividade.
 	def __init__(self):
 		self.inicio = None
 		self.fim = None
@@ -20,7 +19,6 @@ class Lista:
 		self.fim = novo
 
 	def carregar_valores(self, valores):
-		# Reinicia a lista e carrega novamente os dados.
 		self.inicio = None
 		self.fim = None
 		for valor in valores:
@@ -142,7 +140,6 @@ class Lista:
 
 		self.carregar_valores(valores)
 
-#não fiz um rand de valores fiquei com preguiça vai assim chumbado
 if __name__ == "__main__":
 	dados = [170, 45, 75, 90, 802, 24, 2, 66, 45, 0, 999]
 

@@ -1,0 +1,40 @@
+Este trabalho consiste no desenvolvimento de uma aplicação backend, aplicando boas práticas e princípios de arquitetura de software e de frameworks, e justificando adequadamente as decisões de design e de tecnologias utilizadas. O tema da aplicação é livre, mas o aluno deverá pensar em uma aplicação que possua funcionalidades de negócio para fazer uso adequado dos princípios de arquitetura de software e de frameworks. 
+Instruções gerais:
+O trabalho possui um tema livre com algumas restrições quanto às funcionalidades, ou seja, o(s) aluno(s) poderá(ão) trabalhar com um domínio de aplicação de seu interesse. O trabalho é individual ou dupla.
+Com base nessa especificação, o(s) aluno(s) (individual ou em dupla) deverá(ão) desenvolver o back-end da aplicação. No entanto, essa aplicação deve ter um escopo adequado, trabalhando com funcionalidades de negócio e persistência com banco de dados, para o aluno utilizar corretamente algum framework backend (ex: Nest.js) e aplicar corretamente alguma arquitetura de software (ex: Clean Architecture, Arquitetura em Camadas, etc).
+Além da aplicação em si, o aluno deverá descrever a modelagem do domínio corretamente, justificar as decisões arquiteturais e descrever as funcionalidades fazendo uso ou não do framework, além de descrever o problema e a solução e o uso de ferramentas (IA) de forma crítica. Assim, além da implementação, um relatório deve ser realizado para a documentação do trabalho.
+Por fim, os alunos deverão apresentar o trabalho para a turma. A ideia da apresentação é realizar um Pitch de 10 a 15 minutos, descrevendo o relatório e demonstrando rapidamente o backend da aplicação.
+Estrutura da Documentação e da Apresentação:
+Sugere-se como estrutura do relatório e da apresentação os seguintes tópicos:
+- Título e subtítulo (além da informação dos autores e turma)
+- Introdução: descrição geral do trabalho
+- Problema: descrição da necessidade da aplicação em si.
+- Solução: descrever a aplicação em si, os requisitos e as funcionalidades de negócio.
+- Arquitetura do Sistema: descrever a arquitetura adotada (explicação das camadas), modelagem de domínio, decisões técnicas.
+- Ferramentas utilizadas: frameworks, como fizeram uso de IAs (e quais), outras ferramentas. Uma breve descrição de cada uma.
+- Considerações Finais: uma conclusão do trabalho em si, contribuição do trabalho.
+O relatório deve ter no máximo 10 páginas. Já a apresentação deve variar de 10 a 15 minutos. A entrega do relatório deverá ser realizado até o dia 15/05 e as apresentações poderão ocorrer no dia 15/05 e 22/05.
+Avaliação
+O conceito desse trabalho será baseado de acordo com as funcionalidades, as decisões arquiteturais, uso das ferramentas, do desenvolvimento da aplicação, relatório e apresentação. Abaixo segue a relação de conceitos e features a serem realizadas no trabalho:
+Conceito C:
+- Esboço da aplicação com funcionalidades de negócio e persistência;
+- Descrição razoável do problema, solução, arquitetura e ferramentas utilizadas.
+- Backend da aplicação simples, realizando pelo menos dois CRUDs adequadamente, com arquitetura OK e uso dos frameworks corretamente;
+- Uso do Git e Github;
+- Modelagem de domínios apropriada;
+- Documentação e apresentação OK.
+Conceito B:
+- Realizar as tarefas para alcançar o conceito C;
+- Descrição adequada do problema, solução, arquitetura com decisões arquiteturais aplicadas corretamente e descrição do uso crítico de ferramentas 
+- Backend da aplicação adequado, realizando além de CRUDs funcionalidades de negócio, com validação, arquitetura OK e uso dos frameworks corretamente;
+- Documentação bem escrita e apresentação bem clara.
+Conceito A:
+- Realizar as tarefas para alcançar o conceito B;
+- Realizar alguma funcionalidade diferenciada no backend que faça uso de decisões arquiteturais diferenciadas e/ou uso correto de outros recursos. Exemplo: trabalhar com GraphQL, com cache, etc;
+- Tratamento de erros, validações, regras de negócio e exceções na aplicação como um todo;
+- Documentação descrita e apresentação realizada com excelência.
+Apresentação e Entrega:
+O trabalho deverá ser realizado individualmente ou em dupla. A entrega deve conter o relatório (DOC ou PDF), os slides (PPT ou PDF) e o link do Github. 
+Todos alunos deverão realizar a entrega e a ordem de apresentação será sorteada no dia 08/05.
+Data de entrega: 15/05
+Data das apresentações: 15/05 e 22/05

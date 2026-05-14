@@ -1,0 +1,302 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2025-05-13T14:00:00.000Z",
+  "__export_source": "insomnia.desktop:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_tech_1",
+      "_type": "request",
+      "name": "POST - Criar Cliente",
+      "url": "{{ base_url }}/api/v1/clients",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Relojoaria Silva\",\n  \"email\": \"contato@relojoaria.com\",\n  \"phone\": \"1133333333\",\n  \"address\": \"Rua das Flores, 100\",\n  \"cpfCnpj\": \"12345678000190\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_2",
+      "_type": "request",
+      "name": "GET - Listar Clientes",
+      "url": "{{ base_url }}/api/v1/clients?skip=0&take=10",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_3",
+      "_type": "request",
+      "name": "GET - Buscar Cliente por ID",
+      "url": "{{ base_url }}/api/v1/clients/{{ client_id }}",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_4",
+      "_type": "request",
+      "name": "PUT - Atualizar Cliente",
+      "url": "{{ base_url }}/api/v1/clients/{{ client_id }}",
+      "method": "PUT",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"name\": \"Relojoaria Silva Ltda\",\n  \"phone\": \"1133333334\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_5",
+      "_type": "request",
+      "name": "DELETE - Deletar Cliente",
+      "url": "{{ base_url }}/api/v1/clients/{{ client_id }}",
+      "method": "DELETE",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_6",
+      "_type": "request",
+      "name": "POST - Criar Peça (Bateria)",
+      "url": "{{ base_url }}/api/v1/parts",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"BATERIA-LR626\",\n  \"description\": \"Bateria LR626 para relógios\",\n  \"costPrice\": 2.50,\n  \"salePrice\": 8.99,\n  \"stockQuantity\": 50\n}"
+      }
+    },
+    {
+      "_id": "req_tech_7",
+      "_type": "request",
+      "name": "POST - Criar Peça (Mola)",
+      "url": "{{ base_url }}/api/v1/parts",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"code\": \"MOLA-SMALL\",\n  \"description\": \"Mola pequena para mecanismo\",\n  \"costPrice\": 1.00,\n  \"salePrice\": 3.50,\n  \"stockQuantity\": 100\n}"
+      }
+    },
+    {
+      "_id": "req_tech_8",
+      "_type": "request",
+      "name": "GET - Listar Peças",
+      "url": "{{ base_url }}/api/v1/parts?skip=0&take=10",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_9",
+      "_type": "request",
+      "name": "GET - Buscar Peça por ID",
+      "url": "{{ base_url }}/api/v1/parts/{{ part_id }}",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_10",
+      "_type": "request",
+      "name": "GET - Buscar Peças (Search com Cache)",
+      "url": "{{ base_url }}/api/v1/parts/search?q=bateria",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_11",
+      "_type": "request",
+      "name": "PUT - Atualizar Peça",
+      "url": "{{ base_url }}/api/v1/parts/{{ part_id }}",
+      "method": "PUT",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"stockQuantity\": 45\n}"
+      }
+    },
+    {
+      "_id": "req_tech_12",
+      "_type": "request",
+      "name": "DELETE - Deletar Peça",
+      "url": "{{ base_url }}/api/v1/parts/{{ part_id }}",
+      "method": "DELETE",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_13",
+      "_type": "request",
+      "name": "POST - Criar Ordem de Serviço",
+      "url": "{{ base_url }}/api/v1/order-services",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"clientId\": \"{{ client_id }}\",\n  \"productDescription\": \"Relógio de bolso - troca de bateria e regulagem\",\n  \"laborCost\": 50.00,\n  \"notes\": \"Cliente solicita não abrir o vidro. Relógio tem muito valor histórico.\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_14",
+      "_type": "request",
+      "name": "GET - Listar Ordens de Serviço",
+      "url": "{{ base_url }}/api/v1/order-services?skip=0&take=10",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_15",
+      "_type": "request",
+      "name": "GET - Buscar OS por ID",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_16",
+      "_type": "request",
+      "name": "GET - Listar OS por Cliente",
+      "url": "{{ base_url }}/api/v1/order-services/client/{{ client_id }}",
+      "method": "GET",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_17",
+      "_type": "request",
+      "name": "POST - Adicionar Peça à OS (Reserva de Estoque)",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/parts",
+      "method": "POST",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"partId\": \"{{ part_id }}\",\n  \"quantity\": 1\n}"
+      }
+    },
+    {
+      "_id": "req_tech_18",
+      "_type": "request",
+      "name": "PATCH - Alterar Status para EM_AVALIACAO",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/status",
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"status\": \"EM_AVALIACAO\",\n  \"changedBy\": \"tecnico-001\",\n  \"reason\": \"Iniciando avaliação do produto\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_19",
+      "_type": "request",
+      "name": "PATCH - Alterar Status para AGUARDANDO_APROVACAO",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/status",
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"status\": \"AGUARDANDO_APROVACAO\",\n  \"changedBy\": \"tecnico-001\",\n  \"reason\": \"Orçamento pronto, aguardando aprovação do cliente\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_20",
+      "_type": "request",
+      "name": "PATCH - Alterar Status para EM_REPARO",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/status",
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"status\": \"EM_REPARO\",\n  \"changedBy\": \"tecnico-001\",\n  \"reason\": \"Cliente aprovou orçamento. Iniciando conserto.\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_21",
+      "_type": "request",
+      "name": "PATCH - Alterar Status para PRONTO",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/status",
+      "method": "PATCH",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"status\": \"PRONTO\",\n  \"changedBy\": \"tecnico-001\",\n  \"reason\": \"Conserto finalizado com sucesso\"\n}"
+      }
+    },
+    {
+      "_id": "req_tech_22",
+      "_type": "request",
+      "name": "POST - Finalizar OS (Faz Baixa no Estoque)",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/finalize",
+      "method": "POST",
+      "headers": []
+    },
+    {
+      "_id": "req_tech_23",
+      "_type": "request",
+      "name": "POST - Cancelar OS (Libera Reservas)",
+      "url": "{{ base_url }}/api/v1/order-services/{{ order_service_id }}/cancel",
+      "method": "POST",
+      "headers": []
+    },
+    {
+      "_id": "env_1",
+      "_type": "environment",
+      "name": "TechService OS Dev",
+      "data": {
+        "base_url": "http://localhost:3000",
+        "client_id": "",
+        "part_id": "",
+        "order_service_id": ""
+      }
+    }
+  ]
+}
